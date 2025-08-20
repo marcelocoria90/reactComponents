@@ -1,11 +1,13 @@
-import WorkerPage  from "./worker/Page";
-
+import AppRouter from './routes/Router'
+import { Toaster } from "sonner"
 
 function App() {
-
   return (
     <>
-      <WorkerPage />
+      <Toaster richColors closeButton />
+      <div className='max-w-4xl mx-auto p-4'>
+        <AppRouter />
+      </div>
     </>
   )
 }
